@@ -1,26 +1,68 @@
 :root {
-    --maintext-color: blue;
-    --secondtext-color: black;
+    --maintext-color: teal;
+    --secondtext-color: #606470;
     --other-color: teal;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
 
 header {
+    padding: 10px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--secondtext-color);
-    padding: 30px 30px;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 50px;
-    color: var(--maintext-color);
+    font-size: 40px;
+    color: var(--secondtext-color);
+    margin: 0;
+    padding: 0 10px 0 60px;
+    background-color: var(--maintext-color);
 }
 
-header nav {
+header nav ul {
     color: var(--maintext-color);
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
+    list-style: none;
+    text-decoration: underline solid 3px;
+    text-underline-offset: 4px;
+}
+
+header nav ul a {
+    padding: 10px  50px 15px 0;
+    font-size: 1.2vw;
+}
+
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 120px;
+    background-image: url("../images/01DF3445-C17C-478A-9E20-FA311FBEB047_1_105_c.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    align-items: flex-start;
+}
+
+.hero h2 {
+    font-size: 25px;
+    color: var(--secondtext-color);
+    background-color: var(--maintext-color);
+    padding: 10px;
+    
+}
+
+h2 {
+    font-size: 35px;
 }
