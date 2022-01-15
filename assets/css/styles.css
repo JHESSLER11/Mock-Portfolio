@@ -1,0 +1,26 @@
+:root {
+    --maintext-color: blue;
+    --secondtext-color: black;
+    --other-color: teal;
+}
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--secondtext-color);
+    padding: 30px 30px;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--maintext-color);
+}
+
+header nav {
+    color: var(--maintext-color);
+    flex-wrap: wrap;
+    display: flex;
+}
