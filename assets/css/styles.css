@@ -93,16 +93,49 @@ header nav ul a {
     align-items: center;
 }
 
-.work-section div {
-    padding: 25px 100px 25px 100px ;
-    margin: 50px 10px 10px 10px;
-    border: 5px solid var(--border-color);
+.work-section:first-child {
+    align-self: stretch;
+    justify-content: flex-start ;
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
-    border: none;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 25px 50px 25px 50px ;
+    margin: 50px 10px 10px 10px;
+    flex: 1;
+}
 
+.project-box {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid var(--border-color);
+    margin: 0 10px 10px 10px;
+    padding: 50px 50px 25px 0 ;
+    text-align: left;
+}
+
+.project-box:first-child {
+    width: 100%;
+}
+
+.project-box:not(:first-child) {
+    flex: 1;
+}
+
+.project-text {
+    margin: 0;
+    background-color: var(--border-color);
+    padding: 10px;
+    text-decoration: underline none;
+
+}
+
+.project-text h3 {
+    font-size: 15px;
+}
+
+.project-text p {
+    font-size: 10px;
 }
