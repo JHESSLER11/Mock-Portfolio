@@ -37,7 +37,7 @@ header nav ul {
     text-underline-offset: 4px;
 }
 
-header nav ul a, .contact div ul li {
+header nav ul a, .contact div ul a {
     padding: 10px  50px 15px 0;
     font-size: 1.2vw;
 }
@@ -147,16 +147,17 @@ header nav ul a, .contact div ul li {
 .contact {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .contact>*:first-child {
     align-self: stretch;
-    justify-content: flex-start ;
+    
 }
 
 .contact div ul {
     display: flex;
-    justify-content: space-between;
     align-self: center;
     list-style: none;
+    width: 100%;
 }
