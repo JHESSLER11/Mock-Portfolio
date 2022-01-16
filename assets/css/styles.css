@@ -37,7 +37,7 @@ header nav ul {
     text-underline-offset: 4px;
 }
 
-header nav ul a {
+header nav ul a, .contact div ul li {
     padding: 10px  50px 15px 0;
     font-size: 1.2vw;
 }
@@ -71,7 +71,11 @@ header nav ul a {
     padding: 20px 0 0 0px;
 }
 
-.about h2, .work-section h2{
+.about>*:first-child {
+    align-self: stretch;
+}
+
+.about h2, .work-section h2, .contact h2 {
     color: var(--secondtext-color);
     font-size: 40px;
     border-right: 3px solid var(--secondtext-color);
@@ -88,12 +92,11 @@ header nav ul a {
 
 .work-section {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
 }
 
-.work-section:first-child {
+.work-section>*:first-child {
     align-self: stretch;
     justify-content: flex-start ;
 }
@@ -110,6 +113,7 @@ header nav ul a {
 .project-box {
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
     border: 5px solid var(--border-color);
     margin: 0 10px 10px 10px;
     padding: 50px 50px 25px 0 ;
@@ -128,7 +132,7 @@ header nav ul a {
     margin: 0;
     background-color: var(--border-color);
     padding: 10px;
-    text-decoration: underline none;
+    text-decoration: none;
 
 }
 
@@ -138,4 +142,21 @@ header nav ul a {
 
 .project-text p {
     font-size: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact>*:first-child {
+    align-self: stretch;
+    justify-content: flex-start ;
+}
+
+.contact div ul {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    list-style: none;
 }
