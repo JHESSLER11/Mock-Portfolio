@@ -68,7 +68,7 @@ header nav ul a {
     flex-wrap: nowrap;
     justify-content: space-between;
     color: var(--maintext-color);
-    padding: 20px;
+    padding: 20px 0 0 0px;
 }
 
 .about h2, .work-section h2{
@@ -88,15 +88,21 @@ header nav ul a {
 
 .work-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    border: 10px;
-    width: 80%;
 }
 
 .work-section div {
     padding: 25px 100px 25px 100px ;
+    margin: 50px 10px 10px 10px;
     border: 5px solid var(--border-color);
-    margin: 10px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    justify-content: center;
+
 }
