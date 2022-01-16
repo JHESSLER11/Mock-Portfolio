@@ -47,7 +47,7 @@ header nav ul a, .contact div ul a {
     justify-content: flex-end;
     flex-wrap: wrap;
     padding: 120px;
-    background-image: url("../images/01DF3445-C17C-478A-9E20-FA311FBEB047_1_105_c.jpeg");
+    background-image: url("../images/hero.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -80,7 +80,7 @@ header nav ul a, .contact div ul a {
     font-size: 40px;
     border-right: 3px solid var(--secondtext-color);
     padding: 0 10px 0 100px;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .about div p {
@@ -98,7 +98,7 @@ header nav ul a, .contact div ul a {
 
 .work-section>*:first-child {
     align-self: stretch;
-    justify-content: flex-start ;
+    justify-content: flex-start;
 }
 
 .projects {
@@ -118,6 +118,7 @@ header nav ul a, .contact div ul a {
     margin: 0 10px 10px 10px;
     padding: 50px 50px 25px 0 ;
     text-align: left;
+    height: 100%;
 }
 
 .project-box:first-child {
@@ -126,6 +127,30 @@ header nav ul a, .contact div ul a {
 
 .project-box:not(:first-child) {
     flex: 1;
+}
+
+.project-box.photo1 {
+    background-image: url(../images/RunBuddy.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project-box.photo2 {
+    background-image: url(../images/Horiseon-screenshot.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project-box.photo3 {
+    background-image: url(../images/robots.png);
+}
+
+.project-box.photo4 {
+    background-image: url(../images/ArcGISOnline.png);
+}
+
+.project-box.photo5 {
+    background-image: url(../images/vegplots.jpeg);
 }
 
 .project-text {
@@ -160,4 +185,5 @@ header nav ul a, .contact div ul a {
     align-self: center;
     list-style: none;
     width: 100%;
+    font-style: var(--maintext-color);
 }
