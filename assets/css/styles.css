@@ -8,7 +8,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-
+/* header styles */
 header {
     padding: 10px 10px;
     display: flex;
@@ -25,7 +25,7 @@ header h1 {
     padding: 0 10px 0 60px;
     background-color: var(--maintext-color);
 }
-
+/* navigation styles */
 header nav ul {
     color: var(--maintext-color);
     flex-wrap: wrap;
@@ -41,7 +41,7 @@ header nav ul a, .contact div ul a {
     padding: 10px  50px 15px 0;
     font-size: 1.2vw;
 }
-
+/* hero styles */
 .hero {
     display: flex;
     justify-content: flex-end;
@@ -62,7 +62,7 @@ header nav ul a, .contact div ul a {
     padding: 10px;
     
 }
-
+/* about me section styles */
 .about {
     display: flex;
     flex-wrap: nowrap;
@@ -74,7 +74,7 @@ header nav ul a, .contact div ul a {
 .about>*:first-child {
     align-self: stretch;
 }
-
+/* h2 header styles */
 .about h2, .work-section h2, .contact h2 {
     color: var(--secondtext-color);
     font-size: 40px;
@@ -84,12 +84,12 @@ header nav ul a, .contact div ul a {
 }
 
 .about div p {
-    padding: 0 20px 0 50px;
+    padding: 0 20px 0 60px;
     color: var(--secondtext-color);
     margin: 50px 200px 0 0;
     align-items: center;
 }
-
+/* work section styles */
 .work-section {
     display: flex;
     justify-content: flex-start;
@@ -98,14 +98,13 @@ header nav ul a, .contact div ul a {
 
 .work-section>*:first-child {
     align-self: stretch;
-    justify-content: flex-start;
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 25px 50px 25px 50px ;
+    padding: 25px 50px 25px 60px ;
     margin: 50px 10px 10px 10px;
     flex: 1;
 }
@@ -120,7 +119,7 @@ header nav ul a, .contact div ul a {
     text-align: left;
     height: 100%;
 }
-
+/* makes first flexbox whole width of page */
 .project-box:first-child {
     width: 100%;
 }
@@ -128,7 +127,7 @@ header nav ul a, .contact div ul a {
 .project-box:not(:first-child) {
     flex: 1;
 }
-
+/* flexbox background image styles */
 .project-box.photo1 {
     background-image: url(../images/RunBuddy.png);
     background-position: center;
@@ -168,22 +167,28 @@ header nav ul a, .contact div ul a {
 .project-text p {
     font-size: 10px;
 }
-
+/* contact styles */
 .contact {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .contact>*:first-child {
     align-self: stretch;
     
 }
-
+/* contact link styles */
 .contact div ul {
+    color: var(--maintext-color);
     display: flex;
-    align-self: center;
+    justify-content: space-around;
+    text-align: center;
     list-style: none;
+    text-decoration: underline solid 3px;
+    text-underline-offset: 4px;
+    margin: auto;
+    padding: 38px;
     width: 100%;
-    font-style: var(--maintext-color);
 }
