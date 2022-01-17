@@ -7,7 +7,7 @@
 * changed structure of CSS to match html 
 
 ## Screen Shot
-![Alt text](https://github.com/JHESSLER11/Horiseon-Week-1/blob/main/assets/images/Horiseon-screenshot.png)
+![Alt text](https://github.com/JHESSLER11/Mock-Portfolio/blob/main/assets/images/screenshot.png)
 
 ## Link to deployed application
 Click [Here!](https://jhessler11.github.io/Mock-Portfolio/) to go to my deloyed application
