@@ -25,7 +25,13 @@ header h1 {
     padding: 0 10px 0 60px;
     background-color: var(--maintext-color);
 }
+
 /* navigation styles */
+
+.navbar {
+    background-color: white !important;
+}
+
 header nav ul {
     color: var(--maintext-color);
     flex-wrap: wrap;
