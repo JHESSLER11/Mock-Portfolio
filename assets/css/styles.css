@@ -135,7 +135,7 @@ header nav ul a, .contact div ul a {
 }
 /* flexbox background image styles */
 .project-box.photo1 {
-    background-image: url(../images/RunBuddy.png);
+    background-image: url(../images/page_with_storage.png);
     background-position: center;
     background-size: cover;
 }
